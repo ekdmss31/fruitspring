@@ -26,9 +26,7 @@
   border-radius: 5px;
   border: ridge;
 }
-.login-main .login-btn #login-btn
-  , .login-main .login-btn #sign-btn{
-  margin: auto;
+#login-btn , #sign-btn{
   margin-top: 15px;
   padding: 10px 30px;
   border: none;
