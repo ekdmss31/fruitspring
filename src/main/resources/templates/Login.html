@@ -5,6 +5,7 @@
   <title>Login</title>
   <link rel="stylesheet" href="Login.css">
 </head>
+
 <body>
 <p th:text="'안녕하세요. ' + ${data}" >안녕하세요</p>
 <p th:text="'안녕하세요. ' + ${name}" >안녕하세요</p>
@@ -17,10 +18,8 @@
     <div class="pw">
       <input type="password" class="idpw" placeholder="비밀번호" maxlength="20">
     </div>
-    <div class="login-btn">
       <button type="button" id="login-btn">로그인</button>
-      <button type="button" id="sign-btn">회원가입</button>
-    </div>
+      <button type="button" id="sign-btn" onClick="location.href='/sign'">회원가입</button>
   </section>
 </div>
 </body>
