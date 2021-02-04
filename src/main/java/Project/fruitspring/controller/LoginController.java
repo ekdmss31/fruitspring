@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class LoginController {
 
-
     @GetMapping("login")
     public String login(Model model) {
         model.addAttribute("data","hello!!");
