@@ -20,6 +20,7 @@ public class LoginController {
     public String loginMvc(@RequestParam("name") String name, Model model) {
         model.addAttribute("name",name);
         return "Login";
+
     }
 
     @GetMapping(value = "/sign")
