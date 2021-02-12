@@ -28,23 +28,5 @@ public class LoginController {
     public String signFrom(){
         return "sign";
     }
-    @GetMapping("hello-api")
-    @ResponseBody
-    public Hello helloApi(@RequestParam("name") String name){
-        Hello hello = new Hello();
-        hello.setName(name);
-        return hello; //문자가 아닌 객체를 넘김. 결과값이 { name: "spring!!" } 이렇게 뜸. 그런데 이것은 json 방식임. {"key : value"}로 이루어져있음.
 
-    }
-    static class Hello {
-        private String name;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-    }
 }
